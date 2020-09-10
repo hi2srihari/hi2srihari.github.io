@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Reasons to love Go</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo"><strong>Writings</strong> </a>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+						</li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+					</ul>
+				</header>
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h1>Reasons to Love Golang</h1>
+					</header>
+
+					<span class="image main article-image"><img src="../images/pic11.jpg" alt="" /></span>
+
+					<p>The Go Programming language or GoLang as it is popularly known , was introduced by Google in
+						2007.As of September 2019 it has been given a TIOBE index of 14<a id="TIOBECite" href="#TIOBE"
+							class="cite">[1]</a>.
+
+					</p>
+
+					<p>The design philosophy behind Go is to take the blazing speed of languages like C and add
+						inbuilt highfalutin memory management capabilities to provide us with the best of both worlds.
+					</p>
+
+					<p>Here are a few reasons I find Go refreshing </p>
+
+
+					<hr class="major" />
+
+					<h2>1:99 problems but malloc ain't one:</h2>
+					<p>For erudite Java programmers who may find it below them to get one's hands dirty and rummage
+						through
+						the memory for making room for variables and for clearing up used space, Go plays GarbageMan for
+						you,
+						taking care of these plebeian necessities.</p>
+					<span class="image main"><img src="./garbage-man.jpeg" alt="garbage-man" /></span>
+
+
+					<p>Someone's got to do the dirty job.</p>
+
+					<p>But this doesn't mean you completely have to take your hands off the wheel , we can still indulge
+						in things like pointer arithmetic and using memory references because who doesn't like
+						efficiency?</p>
+
+					<p></p>and speaking of efficiency...</p>
+
+					<hr class="major" />
+
+					<h2>2:built in data types that snuggle in nicely:</h2>
+					<p>Go features several data type sizes for accommodating numbers:
+						<ul>
+							<li>int8</li>
+							<li>int16</li>
+							<li>int32</li>
+							<li>int64</li>
+						</ul>
+
+
+
+
+						<p>and</p>
+						<ul>
+							<li>uint8</li>
+							<li>uint16</li>
+							<li>uint32</li>
+							<li>uint64</li>
+						</ul>
+
+					</p>
+					<p>finding the right fit for your data while being mindful of memory contraints has never been
+						easier!</p>
+
+					<hr class="major" />
+
+					<h2>3:supports both static and dynamic variable declaration</h2>
+					<p>Go is strictly typed but variables can be named and used anywhere with a dynamic</p>
+					<code>myVariable := "someString"</code>
+					<p>or</p>
+
+					<code>myVariable var string = "someOtherString"
+					</code>
+					<p>really handy as a lot of redundant typing can be avoided</p>
+
+
+					<hr class="major" />
+
+					<h2>4:does not need a virtual machine:</h2>
+					<p>Back in the day when there was a plethora of gadgets to support and lack of standardization,
+						it was a great idea to have a "write one, run anywhere" philosophy.</p>
+					<span class="image main"><img src="./virtual-machine.jpeg" alt="virtual-machine" /></span>
+					<p>But let's face it virtual machines are soooo....2000s </p>
+
+					<p>Go compiles to native code, meaning that for any given target,it directly generates executables
+						and binaries thereby doing away with need for VMs</p>
+
+					<h2>5:decent error handling</h2>
+					<p>when things crash and burn , you need some sort of handle on things , sure things are bad,
+						but how bad?</p>
+					<span class="image main"><img src="./memory-management.jpeg" alt="virtual-machine" /></span>
+					<p>when failing it is important to fail gracefully</p>
+
+					<p>go allows us to capture errors from methods ,and ignore them,handle them or panic() in the face
+						of danger </p>
+
+
+					<h2>6: Goroutines -> multithreading minus the hassle</h2>
+					<p>Parallelization is a more than just a hip thing in this day of information overload and
+						dwindling attention spans , you can't expect a user to tolerate any unnecessary time overheads.
+						And time is truly precious</p>
+					<p>Java 8 even introduced Parallel streams keeping this in mind , and we see no of processor cores
+						increasing by every year to keep pace with Moore's Law. </p>
+					<p>But I digress.
+					</p>
+
+					<p>Point is Java does support Parallelization through Multi Threading ,but let's face it, it is a
+						bit of
+						a learning curve to learn all the libraries and we have to account for the complications arising
+						from using threads in your program.
+					</p>
+
+					<span class="image main"><img src="./multithreading.png" alt="threading" /></span>
+					<p>Go routines to the rescue!</p>
+
+					<p>"Goroutine is a lightweight version of a thread which stores less memory and therefore,
+						could be spun much faster <a id="GoRoutineCite" class="cite" href="#GoRoutine">[2]</a>, so you
+						can have functions running in the background while
+						focussing on other stuff
+						like wondering about"does linear time even exist?"</p>
+
+					<h2>7:cute and adorable mascot</h2>
+					<p>let's face it , for humans to really dig and relate to a product , they need it to carry a
+						personality , an identity , a brand.</p>
+					<span class="image main"><img src="./mascot.png" alt="gopher" /></span>
+					<p>The Geeky looking Go Gopher stands as a "symbol for the Go project and Go programmers
+						everywhere"<a id="GopherCite" class="cite" href="#Gopher">[3]</a></p>
+					<p>Sure beats being faceless , and nothing says I'm good at "digging" through data and doing number
+						"crunching" than a burrowing bucktoothed rodent. </p>
+
+					<div class="references">
+						<h2>References</h2>
+						<ol>
+							<li><a id="TIOBE" href="#TIOBECite">^</a> <a href="https://www.tiobe.com/tiobe-index/">TIOBE
+									index</a></li>
+							<li><a id="GoRoutine" href="#GoRoutineCite">^</a><a
+									href="https://hackernoon.com/goroutines-a-general-introduction-49bed9812c94">Go
+									Routines</a></li>
+							<li><a id="Gopher" href="#GopherCite">^</a><a href="https://blog.golang.org/gopher">Go
+									mascot</a></li>
+						</ol>
+
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+
+				<!-- Search -->
+				<section id="search" class="alt">
+					<form method="post" action="#">
+						<input type="text" name="query" id="query" placeholder="Search" />
+					</form>
+				</section>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+						<li><a href="generic.html">Generic</a></li>
+
+					</ul>
+				</nav>
+
+				<!-- Section -->
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
+							alt="Creative Commons Licence" style="border-width:0"
+							src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed
+					under a
+					<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International License</a>.
+				</footer>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/browser.min.js"></script>
+	<script src="../../assets/js/breakpoints.min.js"></script>
+	<script src="../../assets/js/util.js"></script>
+	<script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>

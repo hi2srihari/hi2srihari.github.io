@@ -1,0 +1,65 @@
+pragma solidity ^0.4.24;
+contract ControlStructure
+{
+     uint [] myArray =  [1,2,3,4,5];
+    //return multiple values from function
+    function myFunc(uint _a,uint _b) public pure returns (uint _sum,uint _product)
+    {
+        _sum = _a+_b;
+        _product = _a*_b;
+    }
+    //ternary operator
+    function checkTernary(uint _a) public pure returns (bool output)
+    {
+        output = _a>10? true :false;
+    }
+    //check while loop
+    function checkWhile(uint _a) public pure returns (uint out)
+    {
+        while(_a<20)
+        {
+            _a+=5;
+        }
+        out=_a;
+    }
+    //checking for loop
+    function checkIDIsPresent(uint _id) public view returns (bool isPresent)
+    {
+        isPresent = false;
+       for (uint i =0;i<myArray.length;i++)
+       {
+           if(myArray[i] == _id)
+           {
+               isPresent = true;
+               break;
+           }
+       }
+        
+    }
+    //test revert
+    function testRevert(uint _a) public pure returns(uint)
+    {
+        if(_a<10)
+        {
+            revert("value should be greater than 10");
+            
+        }
+        else
+        {
+            return 10;
+        }
+    }
+    //test throw
+    function testThrow(uint _a) public pure returns(uint)
+    {
+        if(_a<10)
+        {
+            throw;
+            
+        }
+        else
+        {
+            return 10;
+        }
+    }
+}

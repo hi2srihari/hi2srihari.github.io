@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+.rabbit-lyrics
+{
+    color:#ddd;
+}
+@font-face {
+  font-family: "samarkan";
+  src: url("assets/SAMARO__.TTF");
+}
+.sanskrit-font
+{
+  font-family: "samarkan";
+  font-size: 150%;
+}
+/*
+@media (max-width: 767px) {
+  body {
+    
+    padding-bottom:56.25%;
+  }
+  }
+*/
+/*FUTURE TEXT COLOR CHANGE UPDATE*/
+.text-color{
+        -webkit-animation: color-change 1s infinite;
+        -moz-animation: color-change 1s infinite;
+        -o-animation: color-change 1s infinite;
+        -ms-animation: color-change 1s infinite;
+        animation: color-change 1s infinite;
+    }
+@-webkit-keyframes color-change {
+        0% { color: yellow; }
+        50% { color: red; }
+        100% { color: yellow; }
+    }
+    @-moz-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-ms-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-o-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+</style>
+</head>
+<body>
+    
+<video autoplay muted loop id="myVideo">
+  <source src="waterdrop.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<audio id="myAudio" autoplay="autoplay" preload="auto" loop="loop">
+    <source src="mantrapushpam-chant.mp3" type="audio/mpeg" />
+    <embed src="mantrapushpam-chant.mp3" autostart="true" loop="true"
+    width="2" height="0">
+    </embed>
+</audio>
+<div class="rabbit-lyrics sanskrit-font" data-media="myAudio" data-height="500" data-alignment="center">
+    [00:00.00] Om
+    
+    [00:05.00] Yo 'pam puspam veda
+    <span style="font-family:Garamond">(understand the truth of the flowers)</span>
+               
+    
+    [00:08.00] Puspavan prajavan pasuvan bhavati
+    (become the Lord of the flowers, people, cattle (ie gain enlightenment))
+               
+    
+    [00:12.00] Candramava apam puspam
+    (the moon is the water of the flower)
+               
+    
+    [00:15.00] Puspavan prajavan pasuvan bhavati
+    (become the Lord of the flowers, people, cattle)
+               
+    
+    [00:19.00] Ya Evam Veda
+    (this is the truth)
+               
+
+    [00:21.00] Yopam Ayatanam Veda
+    (Understand the Truth about your dwelling)
+               
+    
+    [00:23.00] Ayatanavan bhavati.
+    (become the in-dweller)
+               
+
+    [00:25.00] Agnirva apam ayatanam
+    (fire is the in-dweller of the water)
+    
+    [00:28.00] Ayatanavan Bhavati
+    (become the in-dweller)
+               
+
+    [00:30.00] Yo agnir ayatanam veda
+    (this is the truth of the abode of the fire)
+
+    [00:33.00] Ayatanavan bhavati.
+    (become the in-dweller)
+    
+    [00:35.00] Apova agnir ayatanam
+    (water is the in-dweller of the fire)
+               
+    
+    [00:38.00] Ayatanavan bhavati.
+    (become the in-dweller)
+               
+    
+    [00:40.00] Ya Evam Veda
+    (this is the truth)
+               
+
+    [00:42.00] Yopam Ayatanam Veda
+    (Understand the Truth about your dwelling)
+               
+    
+    [00:44.00] Ayatanavan bhavati
+    (become the in-dweller)
+                 
+    [00:47.00] Vayurva apam ayatanam
+    (wind is the in-dweller of water)
+               
+    
+    [00:49.00] Ayatanavan bhavati.
+    (become the in-dweller)
+               
+    
+    [00:51.00] Yo vayor ayatanam veda
+    (this is the truth of the abode of the wind)
+               
+    
+    [00:54.00] Ayatanavan bhavati.
+    (become the in-dweller)
+               
+
+    [00:56.00] Apovai vayor ayatanam
+    (water is the in-dweller of the wind)
+                   
+    [00:59.00] Ayatanavan bhavati.
+    (become the in-dweller)     
+    
+    [01:01.00] Ya Evam Veda
+    (this is the truth)
+
+    [01:03.00] Yopam Ayatanam Veda
+    (Understand the Truth about your dwelling)
+
+    [01:06.00] Ayatanavan bhavati.
+    (become the in-dweller)    
+               
+    
+    [01:08.00] Asowvai tapann apam ayatanam
+    (sun is the in-dweller of the water)
+               
+
+    [01:11.00] Ayatanavan bhavati
+              become the in-dweller
+
+    [01:13.00] Yo musya tapata ayatanam veda
+    (understand the truth of the abode of the sun)
+                   
+    [01:16.00] Ayatanavan bhavati.
+    (become the in-dweller)     
+    
+    [01:19.00] Apova amusyatapata ayatanam
+    (water is the in-dweller of the sun)
+
+    
+
+    [01:22.00] Ayatanavan bhavati.
+    (become the in-dweller)  
+
+    [01:24.00] Ya Evam Veda
+    (this is the truth)
+               
+    
+    [01:26.00] Yopam Ayatanam Veda
+    (Understand the Truth about your dwelling)
+               
+
+    [01:28.00] Ayatanavan bhavati
+     (become the in-dweller)
+    
+    [01:30.00] Candrama Vama pamayatnam
+    (Moon is the in-dweller of the water) 
+   
+   [01:34.00] Ayatanavan bhavati
+   (become the in-dweller)
+   
+   [01:35.00]  Yashcandra masa Ayatanam Veda,
+   (understand the truth of the abode of the moon)
+
+   [01:38.00]  Ayatanavan bhavati
+   (become the in-dweller)
+
+   [01:40.00] Apovai Chandra Masa Ayatanam
+    (Water is in-dweller of the moon)
+
+   [01:43.00] Ayatanavan bhavati
+    (become the in-dweller)
+
+  [01:45.00]Ya Evam Veda
+  (This is the Truth)        
+              
+   
+   [01:47.00] Yopam Ayatanam Veda
+    (Understand the Truth about your dwelling)
+              
+
+   [01:50.00] Ayatanavan bhavati
+              (become the in-dweller)
+
+  [01:52.00] Nakshatrani va Apamayatanam
+  (The Stars are the in-dweller of the water)    
+  
+  [01:55.00] Ayatanavan bhavati
+             (become the in-dweller)
+
+  [01:57.00] Yo Nakshtrana mayatanam Veda
+             (Understand the Truth of the abode of the Stars)
+
+  [02:00.00] Ayatanavan bhavati
+             (become the in-dweller)
+             
+  
+  [02:03.00] Apovai Nakshtranam Ayatanam
+             (Water is the in-dweller of the Stars)
+             
+
+  [02:06.00] Ayatanavan bhavati
+             (become the in-dweller)
+            
+             [02:08.00] Ya Evam Veda
+             (This is the Truth)
+             
+  
+  [02:10.00] Yopamaya tanam Veda
+  (Understand the Truth about your dwelling)
+             
+
+  [02:12.00] Ayatanavan bhavati
+             (become the in-dweller)
+          
+
+  [02:14.00] Parjanyova apamayatanam
+  (The cloud is the in-dweller of the water)
+  
+  [02:17.00] Ayatanavan bhavati
+            (become the in-dweller)
+
+  [02:19.00] Yah parjanyasya syayatanam Veda
+             (Understand the truth of the abode of clouds)
+
+  [02:22.00] Ayatanavan bhavati
+            (become the in-dweller)
+            
+  
+  [02:24.00] Apovai parjanya Syayatanam
+             (Water is the in-dweller of the clouds)
+            
+
+  [02:27.00] Ayatanavan bhavati
+   (become the in-dweller)
+            
+  [02:30.00] Ya Evam Veda
+  (This is the Truth)
+            
+  
+  [02:32.00] Yopa maya tanam Veda
+  (Understand the Truth about your dwelling)
+            
+
+  [02:34.00] Ayatanavan bhavati
+   (become the in-dweller)
+  
+  [02:36.00] Samvastaro Va Apamayatanam
+  (The rain is the in-dweller of the water)
+  
+  [02:39.00] Ayatanavan bhavati
+   (become the in-dweller)
+
+  [02:41.00] Yassamvatsarasya ayatanam Veda
+   (Understand the truth of the abode of the rain)
+
+  [02:45.00] Ayatanavan bhavati
+   (become the in-dweller)
+            
+  
+  [02:47.00] Apovai samvatsarasya ayatanam
+  (water is the in-dweller of the rain)
+            
+
+  [02:50.00] Ayatanavan bhavati
+   (become the in-dweller)
+            
+  [02:52.00] Ya Evam Veda
+  (This is the Truth)
+            
+  
+  [02:54.00] Yopsu Navam pratishtitam veda
+  (Listening to this truth every day)
+            
+
+  [02:58.00] Pratyeva tishtati
+  (In the morning is recommended)
+
+  [03:00.00] Om
+    </div>
+
+
+<div class="content">
+  <p>Please enable audio for best experience</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var audio = document.getElementById("myAudio"); 
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    audio.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    audio.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+<!--
+<a>credits</a>
+<a href="https://realprimalconnection.blogspot.com/2012/10/mantra-pushpam-primeval-vedic-mantra.html">blog post</a>
+< href="https://www.youtube.com/watch?v=hKE38CBc3rs"> translation </a>
+-->
+
+<script src="js/rabbit-lyrics.js" type="text/javascript"></script>
+</body>
+</html>

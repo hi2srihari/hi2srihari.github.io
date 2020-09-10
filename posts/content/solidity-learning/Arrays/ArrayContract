@@ -1,0 +1,35 @@
+pragma solidity ^0.4.25;
+contract ArrayContract
+{
+    /*
+    Simple contract to play with data types in solidity
+    */
+    
+    /*Declaring a uint array of fixed size*/
+    uint[] myFixedArray = new uint[](5);
+    /*Getting value of first element from a function*/
+    function getFixedArray() public returns (uint)
+    {
+        myFixedArray[0] = 100;
+        return myFixedArray[0];
+    }
+    /*Declaring a uint array of variable size*/
+    uint[] myVarArray;
+    /*Passing size of array , Getting value of first element from a function*/
+    function getVarArray  (uint size) public returns (uint)
+    {
+        myVarArray = new uint[](size);
+        myVarArray[0] = 101;
+        return myVarArray[0];
+    }
+
+    
+    
+    function myRunnerFunction() public returns (string)
+    {
+        /*Function to test the other functions*/
+        getFixedArray();//decoded output = 100
+        getVarArray(10);//decoded output =101 ,array size needed as argument
+        return "Runner Function Called";
+    }
+}

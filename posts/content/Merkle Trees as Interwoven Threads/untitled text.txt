@@ -1,0 +1,13 @@
+Merkle Tree is a data structure used in Blockchains like Bitcoin.
+
+Merkle Tree Root is computed by repeated hashing of the leaf nodes of a Merkle Tree two at a time.
+
+Much like two threads being woven together to create a stronger resultant thread, when two T hashes are hashed together,
+the resultant hash becomes an order of magnitude more difficult to reverse engineer.
+
+picture/video/graphic to help visualize...
+
+And then the result "twice as strong as the previous" thread is further woven with an equally strong "twice as strong" thread"
+making the resultant thread "four times as strong as the previous", this process is repeat until we get a single,
+"super strong" thread that is virtually impossible to break.
+
